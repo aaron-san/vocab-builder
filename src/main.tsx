@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage.tsx";
 import Template from "./Template.tsx";
 import AboutPage from "./pages/AboutPage.tsx";
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: (
@@ -24,7 +24,9 @@ const router = createBrowserRouter([
       </Template>
     ),
   },
-]);
+];
+
+const router = createBrowserRouter(routes, { basename: "/vocab-builder/" });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
