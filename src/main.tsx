@@ -26,7 +26,9 @@ const routes = [
   },
 ];
 
-const router = createBrowserRouter(routes, { basename: "/vocab-builder/" });
+export const router = createBrowserRouter(routes, {
+  basename: "/vocab-builder/",
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
