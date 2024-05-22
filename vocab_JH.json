@@ -1,7 +1,4 @@
-{
-  "vocab_JH": [
-    {
-      "ID": 1,
+[{ "ID": 1,
       "English": "welcome",
       "basic vocabulary": true,
       "subject word": false,
@@ -61351,4 +61348,3 @@
       "冠": false
     }
   ]
-}
