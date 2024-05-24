@@ -91,7 +91,7 @@ const MeaningQuiz = () => {
                     .sort((a, b) => a.length - b.length)
                     .map((meaning) => {
                       return (
-                        <>
+                        <div key={meaning}>
                           {/* <AnimatePresence initial={false} mode={"wait"}> */}
                           <AnimatePresence initial={false} mode={"wait"}>
                             <motion.button
@@ -108,7 +108,7 @@ const MeaningQuiz = () => {
                               {meaning}
                             </motion.button>
                           </AnimatePresence>
-                        </>
+                        </div>
                       );
                     })}
                 </div>

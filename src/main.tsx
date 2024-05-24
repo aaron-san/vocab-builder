@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage.tsx";
 import Template from "./Template.tsx";
 import AboutPage from "./pages/AboutPage.tsx";
+import PracticePage from "./pages/PracticePage.tsx";
 
 const routes = [
   {
@@ -21,6 +22,14 @@ const routes = [
     element: (
       <Template>
         <AboutPage />
+      </Template>
+    ),
+  },
+  {
+    path: "/practice",
+    element: (
+      <Template>
+        <PracticePage />
       </Template>
     ),
   },
