@@ -7,7 +7,7 @@ const Template = ({ children }: { children: ReactNode }) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <main className="flex flex-col justify-start items-center w-screen h-screen bg-gradient-to-r from-slate-700 to-slate-600">
+    <main className="flex flex-col justify-between items-center w-screen h-screen bg-gradient-to-r from-slate-200 to-slate-100 text-slate-800">
       {menuOpen && <Menu setMenuOpen={setMenuOpen} />}
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {children}
